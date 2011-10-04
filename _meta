@@ -1,0 +1,8 @@
+<package project="Mer:Trunk:Base" name="lcms">
+  <title>Color Management System</title>
+  <description>LittleCMS intends to be a small-footprint, speed optimized color management
+engine in open source form.
+
+</description>
+  <url>http://www.littlecms.com/downloads.htm</url>
+</package>

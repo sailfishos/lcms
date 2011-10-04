@@ -1,0 +1,91 @@
+* Thu Apr 23 2009 Passion Zhao <passion.zhao@intel.com> 1.18
+- Add lcms-CVE-2009-0793.patch
+
+* Tue Mar 31 2009 Vivian Zhang <vivian.zhang@intel.com> 1.18
+- Update to 1.18
+- Remove upstreamed patch
+
+* Fri Jan 09 2009 Anas Nashif <anas.nashif@intel.com> 1.17
+- Make it build with new libtool
+
+* Tue Jun 3 2008 kwizart < kwizart at gmail.com > - 1.17-5
+- Fix Array indexing error in ReadCurve - #448066
+
+* Wed Feb 13 2008 kwizart < kwizart at gmail.com > - 1.17-4
+- Fix packaging bug #432568 (multilib transition).
+
+* Mon Feb 11 2008 kwizart < kwizart at gmail.com > - 1.17-3
+- Rebuild for gcc 4.3
+- Move libs to mutlilibs
+- Prevent timestramps change
+- Convert files-not-utf8
+
+* Wed Aug 22 2007 kwizart < kwizart at gmail.com > - 1.17-2
+- Disable static for now.
+
+* Tue Aug 21 2007 kwizart < kwizart at gmail.com > - 1.17-1
+- Update to 1.17
+- Ship -static for static linking
+
+* Thu Feb  8 2007 Alexander Larsson <alexl@redhat.com> - 1.16-3.fc7
+- Remove requirement on python_sitearch dir (#225981)
+- Don't ship with executable .c/.h files
+
+* Mon Feb  5 2007 Alexander Larsson <alexl@redhat.com> - 1.16-2
+- Run swig during build to fix warnings in generated code
+- Fix build on 64bit
+
+* Mon Feb  5 2007 Alexander Larsson <alexl@redhat.com> - 1.16-1
+- Update to 1.16
+- Specfile cleanups (#225981)
+- Remove static libs
+
+* Thu Dec  7 2006 Jeremy Katz <katzj@redhat.com> - 1.15-2
+- rebuild against python 2.5
+
+* Wed Jul 12 2006 Jesse Keating <jkeating@redhat.com> 
+- rebuild
+
+* Mon Feb 13 2006 Jesse Keating <jkeating@redhat.com> - 1.15-1.2.1
+- rebump for build order issues during double-long bump
+
+* Fri Feb 10 2006 Jesse Keating <jkeating@redhat.com> - 1.15-1.2
+- bump again for double-long bug on ppc(64)
+
+* Tue Feb 07 2006 Jesse Keating <jkeating@redhat.com> - 1.15-1.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* Mon Jan  9 2006 Alexander Larsson <alexl@redhat.com> - 1.15-1
+- Move from extras to core, update to 1.15
+
+* Sun May 22 2005 Michael Schwendt <mschwendt[AT]users.sf.net> - 1.14-3
+- Fix FC4 build (#114146).
+
+* Fri Apr  7 2005 Michael Schwendt <mschwendt[AT]users.sf.net>
+- rebuilt
+
+* Thu May 20 2004 Phillip Compton <pcompton[AT]proteinmedia.com> - 0:1.14-1
+- Update to 1.14.
+
+* Thu May 20 2004 Phillip Compton <pcompton[AT]proteinmedia.com> - 0:1.13-0.fdr.1
+- Updated to 1.13.
+
+* Mon Feb 16 2004 Phillip Compton <pcompton[AT]proteinmedia.com> - 0:1.12-0.fdr.2
+- Spec patch from Ville Skyttä.
+- New sub-package: python-lcms.
+
+* Sun Dec 21 2003 Phillip Compton <pcompton[AT]proteinmedia.com> - 0:1.12-0.fdr.1
+- Updated to 1.12.
+- BuildReq swig >=1.3.12.
+
+* Sun Nov 09 2003 Phillip Compton <pcompton[AT]proteinmedia.com> - 0:1.11-0.fdr.3
+- Fixed doc attributes.
+
+* Sat Oct 11 2003 Phillip Compton <pcompton[AT]proteinmedia.com> - 0:1.11-0.fdr.2
+- Renamed to lcms to match upstream.
+- Provides: littlecms.
+- Fixed doc attributes.
+- Excluding empty dir %%{_libdir}/python2.2/
+
+* Thu Oct 09 2003 Phillip Compton <pcompton[AT]proteinmedia.com> - 0:1.11-0.fdr.1
+- Initial RPM release.
