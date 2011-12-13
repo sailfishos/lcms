@@ -1,3 +1,7 @@
+* Tue Dec 13 2011 Marko Saukko <marko.saukko@cybercom.com> - 1.19
+- Updated to version 1.19
+- Added .yaml for spectacle.
+
 * Thu Apr 23 2009 Passion Zhao <passion.zhao@intel.com> 1.18
 - Add lcms-CVE-2009-0793.patch
 

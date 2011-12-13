@@ -1,0 +1,58 @@
+Name: lcms
+Summary: Color Management System
+Version: 1.19
+Release: 1
+Group: Applications/Productivity
+License: MIT
+URL: http://www.littlecms.com/downloads.htm
+Sources:
+    - http://www.littlecms.com/lcms-%{version}.tar.gz
+Patches:
+    - lcms-CVE-2009-0793.patch
+Description: |
+    LittleCMS intends to be a small-footprint, speed optimized color management
+    engine in open source form.
+
+PkgConfigBR:
+    - zlib
+PkgBR:
+    - libjpeg-devel
+    - libtiff-devel
+    - pkgconfig
+    - python-devel
+    - swig >= 1.3.12
+    - automake
+    - autoconf
+    - libtool
+Provides:
+    - littlecms = %{version}-%{release}
+Configure: none
+Builder: none
+SubPackages:
+    - Name: libs
+      Summary: Library for %{name}
+      Group: System/Libraries
+      Description: The %{name}-libs package contains library for %{name}.
+      Obsoletes:
+          - lcms < 1.17-3
+
+    - Name: python-%{name}
+      AsWholeName: yes
+      Summary: Python interface to LittleCMS
+      Group: Development/Libraries
+      Description: Python interface to LittleCMS.
+      Requires:
+          - python
+      Provides:
+          - python-littlecms = %{version}-%{release}
+
+    - Name: devel
+      Summary: Development files for LittleCMS
+      Group: Development/Libraries
+      Description: Development files for LittleCMS.
+      Requires:
+          - "%{name}-libs = %{version}-%{release}"
+          - pkgconfig
+      Provides:
+          - littlecms-devel = %{version}-%{release}
+
