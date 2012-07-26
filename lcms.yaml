@@ -4,7 +4,7 @@ Version: 1.19
 Release: 1
 Group: Applications/Productivity
 License: MIT
-URL: http://www.littlecms.com/downloads.htm
+URL: http://www.littlecms.com/
 Sources:
     - http://www.littlecms.com/lcms-%{version}.tar.gz
 Patches:
