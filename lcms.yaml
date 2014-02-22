@@ -9,6 +9,7 @@ Sources:
     - http://www.littlecms.com/lcms-%{version}.tar.gz
 Patches:
     - lcms-CVE-2009-0793.patch
+    - lcms-aarch64.patch
 Description: |
     LittleCMS intends to be a small-footprint, speed optimized color management
     engine in open source form.

@@ -17,6 +17,7 @@ URL:        http://www.littlecms.com/
 Source0:    http://www.littlecms.com/lcms-%{version}.tar.gz
 Source100:  lcms.yaml
 Patch0:     lcms-CVE-2009-0793.patch
+Patch1:     lcms-aarch64.patch
 BuildRequires:  pkgconfig(zlib)
 BuildRequires:  libjpeg-devel
 BuildRequires:  libtiff-devel
@@ -71,6 +72,9 @@ Development files for LittleCMS.
 
 # lcms-CVE-2009-0793.patch
 %patch0 -p1
+
+# lcms-aarch64.patch
+%patch1 -p1
 # >> setup
 # << setup
 
