@@ -96,7 +96,7 @@ popd
 
 # >> build post
 libtoolize --copy --force
-autoreconf
+autoreconf -vfi
 %configure --with-python --disable-static
 (cd python; ./swig_lcms)
 make %{?_smp_mflags}
