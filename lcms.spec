@@ -10,7 +10,7 @@ Name:       lcms
 
 Summary:    Color Management System
 Version:    1.19
-Release:    1
+Release:    2
 Group:      Applications/Productivity
 License:    MIT
 URL:        http://www.littlecms.com/
